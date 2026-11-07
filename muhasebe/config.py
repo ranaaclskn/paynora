@@ -10,7 +10,9 @@ FIRMA_ADI = "Otto Peyzaj"
 
 # Ollama (yerel model: fatura verisi bilgisayardan dışarı çıkmaz)
 OLLAMA_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
-CHAT_MODEL = os.getenv("CHAT_MODEL", "qwen2.5:1.5b")      # daha isabetli: qwen3:4b
+CHAT_MODEL = os.getenv("CHAT_MODEL", "qwen2.5:1.5b")      # fatura okuma (hızlı)
+# Belgelere dayalı cevap için küçük model yetersiz kalıyor (doğru metni bulsa da "bulunamadı" diyor)
+RAG_MODEL = os.getenv("RAG_MODEL", os.getenv("CHAT_MODEL", "qwen3:4b"))
 VISION_MODEL = os.getenv("VISION_MODEL", "qwen2.5vl:3b")   # fiş/fatura fotoğrafı için
 
 # RAG: belgeler → chunk → embedding → Chroma
