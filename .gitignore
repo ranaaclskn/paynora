@@ -13,3 +13,12 @@ rag/chroma_kampus/
 # Editör / sistem
 .vscode/
 .DS_Store
+
+# Muhasebe asistanı: gerçek veriler asla GitHub'a gitmez
+muhasebe/veri/
+*.db
+*.sqlite
+faturalar/
+*.jpg
+*.jpeg
+*.png
