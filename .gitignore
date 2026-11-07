@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Ortam değişkenleri / gizli bilgiler
+.env
+
+# RAG tarafından üretilen yerel vektör veritabanı
+rag/chroma_kampus/
+
+# Editör / sistem
+.vscode/
+.DS_Store
