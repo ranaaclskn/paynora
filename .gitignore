@@ -22,3 +22,6 @@ faturalar/
 *.jpg
 *.jpeg
 *.png
+
+# Büyük / telifli PDF'ler sadece yerelde durur (belgeler/ içine elle kopyalanır)
+muhasebe/belgeler/*.pdf

@@ -25,7 +25,7 @@ def vektor_db():
 
 
 def ara(soru, k=4, tur=None):
-    """Benzerlik araması. tur: 'mevzuat' / 'sirket_politikasi' / 'sozlesme' ile filtrelenebilir.
+    """Benzerlik araması. tur: 'mevzuat' / 'sirket_politikasi' / 'sozlesme' / 'kaynak_kitap' ile filtrelenebilir.
     Skor = mesafe: küçük olan daha benzer."""
     filtre = {"tur": tur} if tur else None
     return vektor_db().similarity_search_with_score(soru, k=k, filter=filtre)
@@ -37,7 +37,10 @@ def cevapla(soru, k=4, tur=None):
     for i, (doc, skor) in enumerate(sonuclar, 1):
         etiket = f"K{i}"
         kaynaklar[etiket] = doc.metadata["chunk_id"]
-        baglam.append(f"[{etiket}] ({doc.metadata.get('baslik', doc.metadata['source'])})\n{doc.page_content}")
+        ad = doc.metadata.get("baslik", doc.metadata["source"])
+        if "page" in doc.metadata:
+            ad += f", sayfa {doc.metadata['page']}"
+        baglam.append(f"[{etiket}] ({ad})\n{doc.page_content}")
     istem = ChatPromptTemplate.from_messages([
         ("system", SISTEM),
         ("human", "SORU: {soru}\n\nKAYNAK METİNLERİ:\n{baglam}"),

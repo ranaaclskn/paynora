@@ -1,5 +1,6 @@
 {
   "kdv_ve_fatura_rehberi.txt": {"tur": "mevzuat", "baslik": "KDV ve Fatura Kuralları"},
   "odeme_politikasi.txt": {"tur": "sirket_politikasi", "baslik": "Harcama ve Ödeme Politikası"},
-  "tedarikci_anlasmalari.txt": {"tur": "sozlesme", "baslik": "Tedarikçi Anlaşmaları"}
+  "tedarikci_anlasmalari.txt": {"tur": "sozlesme", "baslik": "Tedarikçi Anlaşmaları"},
+  "GENEL_MUHASEBE_10__Muhasebe_ve_Finansman_.pdf": {"tur": "kaynak_kitap", "baslik": "Genel Muhasebe 10 (MEB ders materyali)"}
 }

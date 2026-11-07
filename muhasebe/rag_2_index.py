@@ -2,10 +2,13 @@
 Çalıştır: python rag_2_index.py   (belgeler değişince tekrar çalıştır)
 """
 import shutil
+import time
 from langchain_chroma import Chroma
 from langchain_ollama import OllamaEmbeddings
 from config import CHROMA_DIR, COLLECTION, EMBED_MODEL, OLLAMA_URL, VERI_DIR
 from rag_1_belgeler import belgeleri_yukle, chunklara_bol
+
+PAKET = 64  # her seferde embedding'e gönderilen chunk sayısı
 
 
 def embedding_modeli():
@@ -19,13 +22,15 @@ def indeks_olustur(sifirla=True):
             raise RuntimeError(f"Güvensiz silme yolu: {CHROMA_DIR}")
         shutil.rmtree(CHROMA_DIR)
     parcalar = chunklara_bol(belgeleri_yukle())
-    vt = Chroma.from_documents(
-        documents=parcalar,
-        ids=[p.metadata["chunk_id"] for p in parcalar],
-        embedding=embedding_modeli(),
-        collection_name=COLLECTION,
-        persist_directory=str(CHROMA_DIR),
-    )
+    vt = Chroma(collection_name=COLLECTION, embedding_function=embedding_modeli(),
+                persist_directory=str(CHROMA_DIR))
+    baslangic = time.time()
+    for i in range(0, len(parcalar), PAKET):
+        paket = parcalar[i:i + PAKET]
+        vt.add_documents(paket, ids=[p.metadata["chunk_id"] for p in paket])
+        bitti = i + len(paket)
+        print(f"\r  {bitti}/{len(parcalar)} chunk  ({time.time() - baslangic:.0f} sn)", end="", flush=True)
+    print()
     return vt, len(parcalar)
 
 
