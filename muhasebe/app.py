@@ -123,7 +123,19 @@ MENU = f"""
  6. Vadesi geçen / 7 gün içinde dolan faturalar
  7. Kategori bazında giderler
  8. Faturayı ödendi işaretle
+ 9. Belgelere soru sor (KDV kuralları, ödeme politikası, tedarikçi anlaşmaları)
  0. Çıkış"""
+
+
+def belgelere_sor():
+    from rag_3_sorgu import cevapla  # RAG paketleri sadece bu adımda gerekli
+    soru = input("Soru: ").strip()
+    if not soru:
+        return
+    print("Belgelerde aranıyor...")
+    cevap, kaynaklar, _ = cevapla(soru)
+    print("\n" + cevap)
+    print("\nKaynaklar:", ", ".join(f"{k}={v}" for k, v in kaynaklar.items()))
 
 
 def main():
@@ -149,6 +161,8 @@ def main():
             elif secim == "8":
                 no = input("Fatura # numarası: ").strip()
                 print("✓ Güncellendi" if no.isdigit() and odendi_isaretle(con, int(no)) else "Bulunamadı")
+            elif secim == "9":
+                belgelere_sor()
             elif secim == "0":
                 break
         except Exception as hata:  # menü çökmesin, hatayı göster

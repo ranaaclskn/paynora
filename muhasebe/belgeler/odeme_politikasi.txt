@@ -1,0 +1,21 @@
+OTTO PEYZAJ — HARCAMA VE ÖDEME POLİTİKASI (KURGUSAL ÖRNEK BELGE)
+
+Bu belge proje sunumu için hazırlanmış kurgusal bir şirket içi politikadır.
+
+HARCAMA ONAY YETKİLERİ
+5.000 TL'ye kadar olan harcamaları saha ekip şefi kendi yetkisiyle yapabilir. 5.000 TL ile 25.000 TL arasındaki harcamalar için operasyon müdürünün yazılı onayı gerekir. 25.000 TL'nin üzerindeki her harcama ve her yeni tedarikçi ile yapılacak ilk alım için firma sahibinin onayı zorunludur. Onay, WhatsApp mesajı veya e-posta ile yazılı olarak alınmalı ve faturayla birlikte saklanmalıdır.
+
+FATURA TESLİMİ
+Sahada yapılan her alımın faturası veya fişi, alım günü içinde ön muhasebe asistanına fotoğrafı çekilerek yüklenir. Faturanın aslı hafta sonuna kadar ofise teslim edilir. Faturasız alım yapılmaz; akaryakıt alımlarında firma unvanına fatura istenir. Fiş üzerinde firma unvanı yoksa harcama gider olarak kaydedilemez.
+
+TEDARİKÇİ ÖDEMELERİ
+Tedarikçi ödemeleri haftada bir, her cuma günü toplu olarak yapılır. Vadesi o haftaya denk gelen veya geçmiş olan faturalar cuma ödeme listesine alınır. Vadesi geçmiş faturalar listenin başına yazılır. Ödeme yalnızca firma banka hesabından havale/EFT ile yapılır; nakit ödeme yalnızca 2.000 TL altındaki acil saha alımlarında kabul edilir.
+
+KİRA VE SABİT GİDERLER
+Depo kirası her ayın 5'ine kadar ödenir. Elektrik, su ve telefon faturaları son ödeme tarihinden en az iki gün önce ödenir. Sabit gider ödemeleri cuma ödeme gününü beklemez.
+
+MÜŞTERİ TAHSİLATLARI
+Peyzaj projelerinde iş başlangıcında toplam bedelin yüzde 30'u avans olarak alınır. Kalan tutar iş tesliminde faturalanır ve vadesi 15 gündür. Aylık bakım sözleşmelerinde fatura her ayın son iş günü kesilir, vadesi 30 gündür. Vadesi 10 gün geçen alacaklar için müşteriye hatırlatma gönderilir; 30 gün geçen alacaklarda yeni iş başlatılmaz.
+
+KDV VE BEYANNAME HAZIRLIĞI
+Ön muhasebe kayıtları her ayın 10'una kadar kapatılır ve önceki aya ait tüm alış ve satış faturaları mali müşavire iletilir. Mali müşavir KDV beyannamesini yasal süre içinde hazırlar. Ödenecek KDV tutarı, beyanname son gününden en az üç gün önce firma hesabında hazır tutulur.

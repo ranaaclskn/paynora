@@ -13,6 +13,12 @@ OLLAMA_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
 CHAT_MODEL = os.getenv("CHAT_MODEL", "qwen2.5:1.5b")      # daha isabetli: qwen3:4b
 VISION_MODEL = os.getenv("VISION_MODEL", "qwen2.5vl:3b")   # fiş/fatura fotoğrafı için
 
+# RAG: belgeler → chunk → embedding → Chroma
+BELGE_DIR = ROOT / "belgeler"
+CHROMA_DIR = VERI_DIR / "chroma_belgeler"
+COLLECTION = "otto_belgeler_v1"
+EMBED_MODEL = os.getenv("EMBED_MODEL", "embeddinggemma")
+
 # Türkiye'de geçerli KDV oranları (%)
 KDV_ORANLARI = (0, 1, 10, 20)
 

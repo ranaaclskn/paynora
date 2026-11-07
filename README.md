@@ -33,6 +33,11 @@ python -m unittest -v test_muhasebe.py   # model gerektirmeyen testler
 python ornek_veri.py                     # kurgusal örnek faturalar
 python app.py                            # asistan menüsü
 python cikarim.py                        # örnek bir faturayı modele okut
+
+ollama pull embeddinggemma
+python rag_1_belgeler.py                 # belgeleri yükle, chunk'lara böl
+python rag_2_index.py                    # embedding üret, Chroma'ya kaydet
+python rag_3_sorgu.py                    # belgelere soru sor
 ```
 
 ## Mimari
@@ -61,7 +66,7 @@ Fatura metni / fotoğrafı
 | Atölye günü | Adım | Durum |
 |---|---|---|
 | Gün 3-4 | Yapılandırılmış çıktı, yerel LLM, doğrulama, SQLite | ✅ |
-| Gün 5-6 | KDV / e-fatura mevzuatı üzerinde kaynaklı cevap veren RAG (`[K1]` atıflı) | ⬜ |
+| Gün 5-6 | Belgeler → chunk → embedding → Chroma; kaynaklı (`[K1]`) cevap veren RAG | ✅ |
 | Gün 7 | LangGraph agent: soruya göre sorgu aracı / RAG / fatura ekleme seçimi | ⬜ |
 | Gün 8 | n8n: her sabah vadesi yaklaşan faturalar için e-posta/Telegram hatırlatması | ⬜ |
 | Gün 9-10 | Test senaryoları, ölçümler, sunum | ⬜ |

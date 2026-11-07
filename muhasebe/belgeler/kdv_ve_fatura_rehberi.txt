@@ -1,0 +1,28 @@
+KDV VE FATURA KURALLARI — KISA REHBER (Kasım 2026)
+
+Bu belge genel bilgilendirme amaçlı bir özettir. Tutarlar her yıl güncellenir; resmi işlemlerden önce Gelir İdaresi Başkanlığı (gib.gov.tr) duyuruları ve mali müşavir ile kontrol edilmelidir.
+Kaynaklar: muhasebetr.com (2026 fatura kesme sınırı), alomaliye.com (beyanname süreleri), sovos.com (2026 e-dönüşüm takvimi).
+
+KDV ORANLARI
+Türkiye'de katma değer vergisinde üç oran uygulanır: yüzde 1, yüzde 10 ve genel oran olan yüzde 20. Bir mal veya hizmet için hangi oranın geçerli olduğu, KDV Kanunu'na ekli listelere göre belirlenir. Listelerde yer almayan mal ve hizmetlere genel oran olan yüzde 20 uygulanır. Oranı emin olunmayan bir kalem için tedarikçinin faturasındaki oran esas alınmadan önce mali müşavire danışılmalıdır.
+
+KDV HESAPLAMA
+Matrah, KDV hariç tutardır. KDV tutarı, matrahın KDV oranıyla çarpılmasıyla bulunur. Fatura toplamı, matrah ile KDV tutarının toplamıdır. Örnek: 10.000 TL matrahlı ve yüzde 20 KDV'li bir hizmette KDV 2.000 TL, toplam 12.000 TL'dir. KDV dahil tutardan matraha ulaşmak için toplam tutar (1 + oran/100) değerine bölünür.
+
+ÖDENECEK KDV NASIL BULUNUR
+Satış faturalarında müşteriden tahsil edilen KDV "hesaplanan KDV"dir. Alış faturalarında tedarikçiye ödenen KDV "indirilecek KDV"dir. Bir ay için ödenecek KDV, hesaplanan KDV'den indirilecek KDV çıkarılarak bulunur. Sonuç eksi çıkarsa o ay KDV ödenmez; aradaki fark "devreden KDV" olarak sonraki aya aktarılır.
+
+KDV BEYANNAMESİ SÜRESİ
+Aylık KDV beyannamesi, vergilendirme dönemini takip eden ayın 28'inci günü saat 23.59'a kadar verilir. Beyan edilen KDV de aynı süre içinde ödenir. Örneğin Kasım 2026 dönemine ait KDV beyannamesinin son günü 28 Aralık 2026'dır. Aylık muhtasar beyanname ise izleyen ayın 26'ncı günü sonuna kadar verilir.
+
+FATURA DÜZENLEME SINIRI
+Satılan malın veya yapılan işin bedeli belirli bir tutarı aşarsa fatura düzenlemek zorunludur. 2026 yılı için fatura düzenleme sınırı 12.000 TL'dir ve 1 Ocak 2026'dan itibaren geçerlidir. Bu tutar 2025 yılında 9.900 TL, 2024 yılında 6.900 TL idi. Sınırın altındaki işlemlerde de alıcı isterse fatura düzenlenmesi gerekir.
+
+FATURA DÜZENLEME SÜRESİ
+Fatura, malın teslimi veya hizmetin yapılmasından itibaren en geç yedi gün içinde düzenlenmelidir. Bu süre içinde düzenlenmeyen fatura hiç düzenlenmemiş sayılır ve usulsüzlük cezasına yol açabilir.
+
+E-FATURA VE E-ARŞİV FATURA
+E-fatura, kayıtlı kullanıcılar arasında elektronik olarak gönderilen faturadır. E-arşiv fatura ise e-fatura sistemine kayıtlı olmayan alıcılara elektronik ortamda düzenlenen faturadır. Basit usulde vergilendirilenler ve işletme hesabı esasına göre defter tutanlar, 31 Aralık 2026'ya kadar vergiler dahil 3.000 TL'ye kadar olan işlemlerde kâğıt fatura düzenleyebilir. 1 Ocak 2027'den itibaren tutara bakılmaksızın tüm faturaların elektronik olarak düzenlenmesi öngörülmektedir. Zorunluluk eşikleri sık değiştiği için firmanın hangi kapsama girdiği her yıl GİB duyurularından kontrol edilmelidir.
+
+BELGE SAKLAMA
+Faturalar ve muhasebe kayıtları, ilgili oldukları yılı takip eden yıldan başlayarak beş yıl süreyle saklanmalıdır. Elektronik faturalar da elektronik ortamda aynı süre boyunca muhafaza edilir.
